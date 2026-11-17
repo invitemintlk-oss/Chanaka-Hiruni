@@ -17,7 +17,7 @@ export const Home: React.FC = () => {
   const [isMusicPlaying, setIsMusicPlaying] = useState(false);
   const audioRef = useRef<HTMLAudioElement | null>(null);
 
-  const weddingDate = new Date('2026-09-17T09:16:00');
+  const weddingDate = new Date('2027-05-26T08:56:00+05:30');
 
   const startMusic = () => {
     if (audioRef.current && !isMusicPlaying) {

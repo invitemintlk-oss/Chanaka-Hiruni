@@ -90,7 +90,7 @@ export const IntroVideo: React.FC<IntroVideoProps> = ({ onComplete, onStart }) =
                       className="text-[#a87b47] font-medium leading-none -mb-2 sm:-mb-4"
                       style={{ fontFamily: "'Great Vibes', cursive", fontSize: "clamp(3.5rem, 15vw, 6rem)" }}
                     >
-                      Saseka
+                      Chanaka
                     </h1>
                     
                     <span 
@@ -104,11 +104,11 @@ export const IntroVideo: React.FC<IntroVideoProps> = ({ onComplete, onStart }) =
                       className="text-[#a87b47] font-medium leading-none mb-8 mt-1"
                       style={{ fontFamily: "'Great Vibes', cursive", fontSize: "clamp(3.5rem, 15vw, 6rem)" }}
                     >
-                      Sachinthana
+                      Hiruni
                     </h1>
 
                     <div className="text-[#a87b47] font-serif text-sm sm:text-base tracking-[0.3em] font-medium mb-12">
-                      17 . 09 . 2026
+                      26 . 05 . 2027
                     </div>
 
                     <motion.button

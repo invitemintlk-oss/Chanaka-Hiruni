@@ -38,7 +38,7 @@ export const SacredUnion: React.FC = () => {
           <p className="text-[#1a1005] font-serif text-[3vw] sm:text-[18px] md:text-[22px] leading-[1.8] max-w-[85%] mx-auto mb-10 sm:mb-16 drop-shadow-sm">
             Request the Honor of Your Presence<br/>
             At the Celebration of the Marriage of their beloved children<br/>
-            Saseka & Sachinthana
+            Chanaka & Hiruni
           </p>
 
           <div className="flex flex-col gap-6 sm:gap-8 w-full max-w-[75%] mx-auto items-start text-left">
@@ -47,8 +47,8 @@ export const SacredUnion: React.FC = () => {
                 <CalendarDays className="w-[5vw] h-[5vw] sm:w-[28px] sm:h-[28px] text-[#3b2a1a]" />
               </div>
               <div className="flex flex-col">
-                <span className="text-[#1a1005] uppercase tracking-[0.1em] text-[3vw] sm:text-[18px] md:text-[20px] font-semibold font-serif">Thursday, September 17</span>
-                <span className="text-[#3b2a1a] uppercase tracking-[0.05em] text-[2.5vw] sm:text-[15px] md:text-[16px] font-sans mt-0.5">The Year Two Thousand Twenty Six</span>
+                <span className="text-[#1a1005] uppercase tracking-[0.1em] text-[3vw] sm:text-[18px] md:text-[20px] font-semibold font-serif">Wednesday, May 26</span>
+                <span className="text-[#3b2a1a] uppercase tracking-[0.05em] text-[2.5vw] sm:text-[15px] md:text-[16px] font-sans mt-0.5">The Year Two Thousand Twenty Seven</span>
               </div>
             </div>
 
@@ -59,7 +59,7 @@ export const SacredUnion: React.FC = () => {
               <div className="flex flex-col">
                 <span className="text-[#1a1005] uppercase tracking-[0.1em] text-[3vw] sm:text-[18px] md:text-[20px] font-semibold font-serif mb-1">09:00 AM - 04:30 PM</span>
                 <span className="text-[#3b2a1a] tracking-[0.05em] text-[2.5vw] sm:text-[15px] md:text-[16px] font-sans leading-snug max-w-[200px] sm:max-w-xs">
-                  The Poruwa Ceremony will be held at 09:16 AM
+                  The Poruwa Ceremony will be held at 08:56 AM
                 </span>
               </div>
             </div>
@@ -69,9 +69,9 @@ export const SacredUnion: React.FC = () => {
                 <MapPin className="w-[5vw] h-[5vw] sm:w-[28px] sm:h-[28px] text-[#3b2a1a]" />
               </div>
               <div className="flex flex-col">
-                <span className="text-[#1a1005] uppercase tracking-[0.1em] text-[3vw] sm:text-[18px] md:text-[20px] font-semibold font-serif mb-1">Hotel Grand Guardian</span>
-                <span className="text-[#3b2a1a] uppercase tracking-[0.05em] text-[2.5vw] sm:text-[15px] md:text-[16px] font-sans mb-0.5">The Grand Ballroom</span>
-                <span className="text-[#3b2a1a] uppercase tracking-[0.05em] text-[2.5vw] sm:text-[15px] md:text-[16px] font-sans">Ratnapura</span>
+                <span className="text-[#1a1005] uppercase tracking-[0.1em] text-[3vw] sm:text-[18px] md:text-[20px] font-semibold font-serif mb-1">Hotel Sarani</span>
+                <span className="text-[#3b2a1a] uppercase tracking-[0.05em] text-[2.5vw] sm:text-[15px] md:text-[16px] font-sans mb-0.5">Digana Road</span>
+                <a href="https://maps.app.goo.gl/AX2KquDbYoQEdDsE8" target="_blank" rel="noreferrer" className="text-[#3b2a1a] uppercase tracking-[0.05em] text-[2.5vw] sm:text-[15px] md:text-[16px] font-sans underline underline-offset-4 hover:text-[#c5a059] transition-colors mt-1">View on Google Maps</a>
               </div>
             </div>
           </div>

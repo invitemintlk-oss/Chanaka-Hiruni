@@ -5,9 +5,9 @@ export const CoupleDetails: React.FC = () => {
   return (
     <div className="w-full flex justify-center bg-[#fdfaf5] overflow-hidden">
       <div 
-        className="relative w-full max-w-[864px] aspect-[864/1821]"
+        className="relative w-full max-w-[866px] aspect-[866/1817]"
         style={{
-          backgroundImage: `url('/ChatGPT Image Aug 11, 2026, 01_01_47 AM.webp')`,
+          backgroundImage: `url('/ChatGPT Image Aug 17, 2026, 12_50_52 AM.webp')`,
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           backgroundRepeat: 'no-repeat'
@@ -38,7 +38,7 @@ export const CoupleDetails: React.FC = () => {
             The Groom
           </span>
           <h3 className="text-[#13203b] font-serif text-[5vw] sm:text-[2.5rem] md:text-[3rem] tracking-widest mb-3 sm:mb-6 uppercase drop-shadow-sm">
-            Sachinthana
+            Chanaka
           </h3>
           <div className="text-[#13203b] font-serif text-[2.5vw] sm:text-[18px] md:text-[22px] space-y-1 sm:space-y-2 drop-shadow-sm">
             <p>Son of</p>
@@ -60,7 +60,7 @@ export const CoupleDetails: React.FC = () => {
             The Bride
           </span>
           <h3 className="text-[#13203b] font-serif text-[5vw] sm:text-[2.5rem] md:text-[3rem] tracking-widest mb-3 sm:mb-6 uppercase drop-shadow-sm">
-            Saseka
+            Hiruni
           </h3>
           <div className="text-[#13203b] font-serif text-[2.5vw] sm:text-[18px] md:text-[22px] space-y-1 sm:space-y-2 drop-shadow-sm">
             <p>Daughter of</p>

@@ -23,97 +23,66 @@ const itemVariants = {
 };
 
 export const HeroContent: React.FC = () => {
+  const glow = { textShadow: "0 0 12px rgba(251,248,241,0.9)" };
   return (
-    <section aria-label="Hero — Save the Date" className="relative min-h-[100dvh] overflow-hidden bg-[#fbf8f1]">
-      {/* Background Image - fully visible without overlay */}
-      <div className="absolute inset-0 z-0">
-        <img 
-          src="/ChatGPT Image Aug 17, 2026, 01_21_57 AM.webp" 
-          alt="Wedding Illustration"
-          className="h-full w-full object-cover object-center" 
+    <section aria-label="Hero — Save the Date" className="relative h-[100dvh] overflow-hidden bg-[#fbf8f1]">
+      {/* Portrait column sized to the illustration so it is never cropped badly on desktop */}
+      <div className="relative mx-auto h-full w-full max-w-[calc(100dvh*941/1672)]">
+        <img
+          src="/ChatGPT Image Aug 4, 2026, 03_50_44 PM.webp"
+          alt="Chanaka and Hiruni in traditional Kandyan wedding attire"
+          className="absolute inset-0 h-full w-full object-cover object-top"
         />
-      </div>
 
-      {/* Text Overlay - Elegant Full Section Layout */}
-      <div className="absolute inset-0 flex flex-col items-center justify-between z-10 py-16 sm:py-20 px-4">
-        
-        {/* Top Content */}
-        <motion.div 
-          className="flex flex-col items-center text-center mt-20 sm:mt-32"
+        {/* Details placed in the empty space at the bottom of the illustration */}
+        <motion.div
+          className="absolute inset-x-0 top-[66%] bottom-[7%] mx-auto flex w-[64%] flex-col items-center justify-center text-center z-10"
           variants={containerVariants}
           initial="hidden"
           animate="visible"
         >
-          <motion.p variants={itemVariants} className="text-[#2C1810] font-serif tracking-[0.2em] uppercase text-[10px] sm:text-[12px] mb-3 font-semibold" style={{ textShadow: "0 0 10px rgba(255,255,255,0.8)" }}>
-            The Celebration of Love
+          <motion.p variants={itemVariants} className="text-[#8a6a3b] font-serif tracking-[0.3em] uppercase text-[9px] sm:text-[11px] font-semibold" style={glow}>
+            The Wedding Of
           </motion.p>
-          
-          <motion.div variants={itemVariants} className="flex items-center gap-2 w-32 mx-auto">
-            <div className="h-[2px] flex-1 bg-[#2C1810]/70"></div>
-            <div className="w-1.5 h-1.5 rotate-45 bg-[#2C1810]"></div>
-            <div className="h-[2px] flex-1 bg-[#2C1810]/70"></div>
-          </motion.div>
-        </motion.div>
 
-        {/* Middle Content - Names */}
-        <motion.div 
-          className="flex flex-col items-center text-center w-full max-w-3xl mx-auto"
-          variants={containerVariants}
-          initial="hidden"
-          animate="visible"
-        >
           <motion.h1 variants={itemVariants}
-            className="text-[#1a1005] font-medium leading-none mb-2"
-            style={{ fontFamily: "'Great Vibes', cursive", fontSize: "clamp(3.5rem, 12vw, 6rem)", textShadow: "0 0 20px rgba(255,255,255,0.7), 0 0 10px rgba(255,255,255,0.7)" }}
+            className="text-[#2C1810] leading-tight mt-1 whitespace-nowrap"
+            style={{ fontFamily: "'Great Vibes', cursive", fontSize: "clamp(2.2rem, 9vw, 3.4rem)", ...glow }}
           >
-            Saseka
+            Chanaka <span className="text-[#b8893a]">&</span> Hiruni
           </motion.h1>
-          
-          <motion.span variants={itemVariants}
-            className="text-[#2C1810] text-3xl sm:text-4xl my-2"
-            style={{ fontFamily: "'Great Vibes', cursive", textShadow: "0 0 15px rgba(255,255,255,0.7)" }}
-          >
-            &
-          </motion.span>
-          
-          <motion.h1 variants={itemVariants}
-            className="text-[#1a1005] font-medium leading-none mt-2"
-            style={{ fontFamily: "'Great Vibes', cursive", fontSize: "clamp(3.5rem, 12vw, 6rem)", textShadow: "0 0 20px rgba(255,255,255,0.7), 0 0 10px rgba(255,255,255,0.7)" }}
-          >
-            Sachinthana
-          </motion.h1>
-        </motion.div>
 
-        {/* Bottom Content - Date (Moved higher up) */}
-        <motion.div 
-          className="flex flex-col items-center text-center mb-36 sm:mb-56"
-          variants={containerVariants}
-          initial="hidden"
-          animate="visible"
-        >
-          <motion.div variants={itemVariants} className="text-[#1a1005] font-serif text-[15px] sm:text-xl tracking-[0.4em] font-bold border-t-2 border-[#2C1810]/50 pt-4 px-8" style={{ textShadow: "0 0 10px rgba(255,255,255,0.8)" }}>
-            17 . 09 . 2026
+          <motion.div variants={itemVariants} className="flex items-center gap-2 w-28 mx-auto my-2 sm:my-3">
+            <div className="h-px flex-1 bg-[#b8893a]/70"></div>
+            <div className="w-1.5 h-1.5 rotate-45 bg-[#b8893a]"></div>
+            <div className="h-px flex-1 bg-[#b8893a]/70"></div>
           </motion.div>
+
+          <motion.p variants={itemVariants} className="text-[#2C1810] font-serif text-[14px] sm:text-lg tracking-[0.35em] font-bold" style={glow}>
+            26 . 05 . 2027
+          </motion.p>
+
+          <motion.p variants={itemVariants} className="text-[#5a4127] font-serif uppercase tracking-[0.18em] text-[9px] sm:text-[11px] mt-2 leading-relaxed" style={glow}>
+            Poruwa Ceremony at 08:56 AM<br />
+            Hotel Sarani, Digana Road
+          </motion.p>
         </motion.div>
 
         {/* Scroll Down Indicator */}
-        <motion.div 
-          className="absolute bottom-8 left-1/2 -translate-x-1/2 cursor-pointer z-20"
+        <motion.div
+          className="absolute bottom-3 left-1/2 -translate-x-1/2 cursor-pointer z-20"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 2, duration: 1 }}
           onClick={() => window.scrollTo({ top: window.innerHeight, behavior: 'smooth' })}
         >
           <motion.div
-            animate={{ y: [0, 10, 0] }}
+            animate={{ y: [0, 8, 0] }}
             transition={{ repeat: Infinity, duration: 2, ease: "easeInOut" }}
-            className="flex flex-col items-center gap-2"
           >
-            <span className="text-[#2C1810] text-[10px] uppercase tracking-[0.3em] font-medium" style={{ textShadow: "0 0 10px rgba(255,255,255,0.8)" }}>Scroll</span>
-            <ChevronDown className="w-6 h-6 text-[#2C1810]" strokeWidth={1.5} />
+            <ChevronDown className="w-5 h-5 text-[#8a6a3b]" strokeWidth={1.5} />
           </motion.div>
         </motion.div>
-
       </div>
     </section>
   );

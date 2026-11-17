@@ -29,10 +29,15 @@ export const Countdown: React.FC<CountdownProps> = ({ targetDate }) => {
   }, [targetDate]);
 
   return (
-    <section aria-label="Countdown" id="countdown" className="relative py-20 sm:py-28 px-6 overflow-hidden" style={{ backgroundImage: `url('/ChatGPT Image Aug 11, 2026, 01_19_32 AM.webp')`, backgroundSize: 'cover', backgroundPosition: 'center' }}>
-      <div className="absolute inset-0 bg-[#fdfaf5]/80 z-0"></div>
-      <div className="relative z-10">
-      <div className="flex items-center justify-center mb-10 sm:mb-14" aria-hidden="true">
+    <section aria-label="Countdown" id="countdown" className="w-full flex justify-center bg-[#fbf3e6] overflow-hidden">
+      <div
+        className="relative w-full max-w-[760px] aspect-[4/5] sm:aspect-square"
+        style={{ backgroundImage: `url('/ChatGPT Image Aug 4, 2026, 04_16_30 PM - Copy.webp')`, backgroundSize: 'cover', backgroundPosition: 'center' }}
+      >
+      {/* Content sits in the open space between the lotus borders */}
+      <div className="absolute inset-x-[4%] top-[6%] bottom-[6%] z-10 flex flex-col justify-center">
+      <div className="pointer-events-none absolute inset-0 -z-10" style={{ background: "radial-gradient(ellipse 60% 55% at 50% 50%, rgba(253,248,238,0.85) 0%, rgba(253,248,238,0.4) 55%, transparent 80%)" }} aria-hidden="true" />
+      <div className="flex items-center justify-center mb-5 sm:mb-10" aria-hidden="true">
         <svg className="w-full max-w-[220px] sm:max-w-sm md:max-w-md" viewBox="0 0 220 24" preserveAspectRatio="xMidYMid meet" fill="none">
           <line x1="0" y1="12" x2="86" y2="12" stroke="#D4AF37" strokeWidth="0.75" strokeOpacity="0.55" />
           <polygon points="89,12 92.5,8.5 96,12 92.5,15.5" fill="#D4AF37" fillOpacity="0.65" />
@@ -50,7 +55,7 @@ export const Countdown: React.FC<CountdownProps> = ({ targetDate }) => {
           Until We Say I Do
         </h2>
 
-        <div className="mb-10 sm:mb-12">
+        <div className="mb-6 sm:mb-10">
           <div className="flex items-center justify-center gap-3" aria-hidden="true">
             <div className="h-px w-12 sm:w-16" style={{ background: "linear-gradient(90deg, transparent, #D4AF37cc)" }} />
             <svg width="9" height="9" viewBox="0 0 9 9" fill="none">
@@ -93,7 +98,7 @@ export const Countdown: React.FC<CountdownProps> = ({ targetDate }) => {
           `}} />
 
           <div className="relative z-10 countdown-glass-wrapper">
-            <div className="flex items-center justify-center gap-8 sm:gap-12 md:gap-14">
+            <div className="flex items-center justify-center gap-6 sm:gap-10">
               {[
                 { label: 'Days', value: timeLeft.days },
                 { label: 'Hours', value: timeLeft.hours },
@@ -101,7 +106,7 @@ export const Countdown: React.FC<CountdownProps> = ({ targetDate }) => {
                 { label: 'Seconds', value: timeLeft.seconds }
               ].map((item, index, arr) => (
                 <React.Fragment key={item.label}>
-                  <div className="flex items-center gap-8 sm:gap-12 md:gap-14">
+                  <div className="flex items-center gap-6 sm:gap-10">
                     <div className="flex flex-col items-center gap-2">
                       <span className="text-4xl sm:text-5xl md:text-6xl font-light leading-none text-[#13203b] drop-shadow-sm" style={{ fontVariantNumeric: "tabular-nums" }}>
                         {String(item.value).padStart(2, '0')}
@@ -124,7 +129,7 @@ export const Countdown: React.FC<CountdownProps> = ({ targetDate }) => {
         </div>
       </div>
 
-      <div className="flex items-center justify-center mt-10 sm:mt-14" aria-hidden="true">
+      <div className="flex items-center justify-center mt-5 sm:mt-10" aria-hidden="true">
         <svg className="w-full max-w-[220px] sm:max-w-sm md:max-w-md" viewBox="0 0 220 24" preserveAspectRatio="xMidYMid meet" fill="none">
           <line x1="0" y1="12" x2="86" y2="12" stroke="#D4AF37" strokeWidth="0.75" strokeOpacity="0.55" />
           <polygon points="89,12 92.5,8.5 96,12 92.5,15.5" fill="#D4AF37" fillOpacity="0.65" />
@@ -135,6 +140,10 @@ export const Countdown: React.FC<CountdownProps> = ({ targetDate }) => {
           <polygon points="124,12 127.5,8.5 131,12 127.5,15.5" fill="#D4AF37" fillOpacity="0.65" />
           <line x1="134" y1="12" x2="220" y2="12" stroke="#D4AF37" strokeWidth="0.75" strokeOpacity="0.55" />
         </svg>
+      </div>
+      <p className="text-center font-serif uppercase tracking-[0.25em] text-[10px] sm:text-xs text-[#5a4127] mt-6">
+        Poruwa Ceremony · 26 May 2027 · 08:56 AM
+      </p>
       </div>
       </div>
     </section>
